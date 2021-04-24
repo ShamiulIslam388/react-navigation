@@ -1,4 +1,85 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-left: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 0px 30px;
+  }
+
+  .mobile {
+    display: inline-block;
+    padding: 0 30px;
+    cursor: pointer;
+  }
+
+  ul {
+    position: absolute;
+    right: -400px;
+    top: 80px;
+    width: 50%;
+    height: 82vh;
+    background: blue;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-in-out;
+  }
+
+  .slide {
+    right: 0;
+  }
+
+  ul li {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
 }
