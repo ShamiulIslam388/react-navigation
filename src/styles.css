@@ -64,18 +64,23 @@ nav {
 
   ul {
     position: absolute;
-    right: -400px;
+    /* right: 0px; */
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
     top: 80px;
-    width: 50%;
+    width: 100%;
     height: 82vh;
     background: blue;
     flex-direction: column;
     align-items: center;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .slide {
-    right: 0;
+    /* right: 0; */
+    transform: scaleY(1);
+    opacity: 1;
   }
 
   ul li {
@@ -83,3 +88,5 @@ nav {
     margin-left: 0px;
   }
 }
+
+/* can make navigation from top left right */
